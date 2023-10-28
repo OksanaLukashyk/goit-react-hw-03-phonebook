@@ -12,13 +12,13 @@ export class ContactForm extends Component {
     evt.preventDefault();
 
     const contactData = {
-        id: nanoid(),
-        name: this.state.name,
-        number: this.state.number,
+      ...this.state,  
+      id: nanoid(),
     
     };
     
-    this.props.handleAddContactData(contactData);
+      this.props.handleAddContactData(contactData);
+      this.setState({ name: '', number: '' });
     };
 
     handleInputChange = evt => {
@@ -52,10 +52,10 @@ export class ContactForm extends Component {
             Number
           <input
             className={css.formInput}
-            type="text"
+            type="tel"
             name="number"  
             onChange={this.handleInputChange}
-            value={this.state.price}
+            value={this.state.number}
             pattern="[+380]{4}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="Only digits, format +380-XX-XXX-XX-XX"
             required
