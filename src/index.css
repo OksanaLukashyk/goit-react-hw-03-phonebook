@@ -7,24 +7,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: -webkit-linear-gradient(
+  background: -webkit-linear-gradient(
     to left,
-    #fdeff9,
+    #d9a7c7,
     #ec38bc,
     #7303c0,
     #03001e
   );
-  /* background: linear-gradient(
-    to left,
-    #fdeff9,
-    #ec38bc,
-    #7303c0,
-    #03001e
-  );*/
-
-  background: #ffa17f;
-  background: -webkit-linear-gradient(to right, #00223e, #ffa17f);
-  background: linear-gradient(to right, #00223e, #ffa17f);
+  background: linear-gradient(to left, #d9a7c7, #ec38bc, #7303c0, #03001e);
 }
 
 code {
