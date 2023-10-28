@@ -15,6 +15,11 @@ export class App extends Component {
     filter: ''
   };
 
+
+  // Під час додавання та видалення контакту контакти зберігаються у локальне сховище.
+  // Під час завантаження застосунку контакти, якщо такі є, зчитуються з локального сховища і записуються у стан.
+  
+  
   addContactData = contactData => {
     const hasDuplicates = this.state.contacts.some(
       contact => contact.name.toLowerCase().trim() === contactData.name.toLowerCase().trim());
