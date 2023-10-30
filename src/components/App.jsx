@@ -15,9 +15,6 @@ export class App extends Component {
     filter: ''
   };
 
-
-
-  // Під час завантаження застосунку контакти, якщо такі є, зчитуються з локального сховища і записуються у стан.
   componentDidMount() { 
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
