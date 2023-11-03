@@ -72,7 +72,7 @@ export class App extends Component {
     return (
     <div className="glass">
       <h1>Phonebook</h1>
-      <ContactForm handleAddContactData={this.addContactData} />
+      <ContactForm onSubmit={this.addContactData} />
       <h2>Contacts</h2>
       <Filter filterValue={this.filter} handleFilterInputChange={this.filterChange} />
       <ContactList filteredContacts={this.filterContacts()} handleDeleteContact={this.deleteContacts} /> 
