@@ -70,7 +70,7 @@ export class App extends Component {
 
   render() {
     return (
-    <div className="glass">
+    <div class="glass">
       <h1>Phonebook</h1>
       <ContactForm onSubmit={this.addContactData} />
       <h2>Contacts</h2>
